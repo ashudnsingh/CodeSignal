@@ -1,4 +1,4 @@
-def pyraminx_puzzle(face_colours, moves):
+def pyraminxPuzzle(face_colours, moves):
     move_position = { "U": [[0, 0], [3, 8], [2, 4]],
                       "u": [[0, 0], [0, 1], [0, 2], [0, 3], [3, 8], [3, 3], [3, 7], [3, 6], [2, 4], [2, 6], [2, 5], [2, 1]],
                       "L": [[2, 0], [1, 8], [0, 4]],
@@ -22,4 +22,4 @@ def shift_color(current_color, left):
     i = len(current_color) // 3
     if left:
         return current_color[i:] + current_color[0:i]
-    return current_color[-i:] + current_color[:-i] 
+    return current_color[-i:] + current_color[:-i]
