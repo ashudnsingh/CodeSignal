@@ -1,0 +1,2 @@
+def corridorsRepairing(n, corridors):
+
